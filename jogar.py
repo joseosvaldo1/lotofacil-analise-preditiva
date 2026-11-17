@@ -19,7 +19,8 @@ sorteados = list()
 procurando = 0
 
 # probabilidade desejada
-prob_alvo = 100.0
+# prob_alvo = 100.0
+prob_alvo = 97.0
 
 # Obtém os pesos de cada dezena e um dicionários com as dezenas e seus pesos
 peso, numero_pesos = calcular_numero_pesos(dados)
@@ -35,7 +36,7 @@ print()
 possibilidades = obter_possibilidades()
 resultado_concursos = resultados_ordenados(dados)
 possibilidades_atualizada = remover_resultado_concursos(
-                                                        possibilidades, 
+                                                        possibilidades,
                                                         resultado_concursos
                                                         )
 
@@ -43,7 +44,7 @@ possibilidades_atualizada = remover_resultado_concursos(
 jogo_aceito = False
 
 # Replica até que a probabilidade seja igual à probabilidade desejada
-# e o jogo seja aceitável 
+# e o jogo seja aceitável
 while probabilidade < prob_alvo and not jogo_aceito:
 
     # Atribui a sequência dos números sorteados
